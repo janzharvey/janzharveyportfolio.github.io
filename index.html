@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="logo">Janz</div>
+            <ul class="menu">
+                <li><a href="#home-page">Home</a></li>
+                <li><a href="#about-page">About</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+    </header>
+    <section>
+        <article id="home-page" class="home">
+            <div class="home-inline">
+                <div class="home-inline-one">                       
+                    <h1 class="name">Hi, I am JANZ</h1>
+                    <h2 class="position">Front-end developer</h2>
+                    <h4 class="introduction">Self-motivated and hardworking fresh IT Graduate and knowledgeable in HTML CSS and JavaScript.</h4>
+                    <button class="learn-more">
+                        <a href="#about-page">Learn More </a><i class="uil uil-arrow-right" style="font-size: 1.2em;"></i>
+                    </button> 
+                </div>
+                <div class="home-inline-two">
+                    <div class="imageHolder">
+                        <img src="../assets/img/photo.png" alt="photo">
+                        <div class="socialHolder">
+                            <ul class="social">
+                                <li><a href="https://linkedin.com/in/janzharvey"><i class="uil uil-linkedin" style="font-size: 1.8em; color: #8A8AFF;"></i></a></li>
+                                <li><a href="https://facebook.com/msg/janz.harvey.9"><i class="uil uil-facebook-messenger" style="font-size: 1.8em; color: #8A8AFF;"></i></a></li>
+                                <li><a href="mailto:janzharveyortega.personal@gmail.com"><i class="uil uil-at" style="font-size: 1.8em; color: #8A8AFF;"></i></a></li>                             
+                            </ul>
+                        </div>                        
+                        </div>
+                    </div>
+            </div> 
+        </article> 
+        <article id="about-page" class="space">                       
+        </article>
+        <article class="about">
+            <div class="about-header">
+                <div><h1 class="text-header">About Me</h1></div>
+                <div><h4 class="text-intro-header">Introduction</h4></div>
+            </div>
+            <div class="about-content">
+                <div class="about-inline">
+                    <div class="about-inline-one">
+                        <div class="about-image-holder">
+                            <img src="../assets/img/photo.png" alt="photo">
+                        </div>                      
+                    </div>
+                    <div class="about-inline-two">
+                        <div class="about-text-holder">
+                            <h3 class="about-intro">Web developer, with knowledge and proficiency in code writing HTML CSS and JavaScript, along with experience in working in web technologies and mobile application development.</h3>
+                            <button class="download-cv">
+                                <a href="../assets/pdf/Janz-CV.pdf" download="Janz-CV.pdf">Download CV <i class="uil uil-download-alt" style="font-size: 1.2em;"></i></a>
+                            </button>
+ 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>         
+    </section>
+    
+
+   
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0)
+        })
+    </script>  
+</body>
+</html>
